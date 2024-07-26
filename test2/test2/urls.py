@@ -28,6 +28,8 @@ urlpatterns = [
     path('cricketers', views.cricketList),
     path('cricketers/<int:id>', views.cricketer_detail),
     path('api/upload/', FileUploadView.as_view(), name='file-upload'),
+    path('users', views.userRegisteration),
+    path('login', views.login, name='login'),
 
 ]
 
